@@ -1,0 +1,335 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+.max-width{
+  max-width:1300px;
+  padding: 0 80px;
+  margin: auto;
+}
+/*navbar Styling*/
+.navbar{
+  position: fixed;
+  width: 100%;
+  padding: 30px 0;
+  background:transparent;
+  font-family: 'Ubuntu', Sans-Serif;
+}
+.navbar .max-width{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.navbar .logo a{
+  color:#fff;
+  font-size:35px;
+  font-weight:600;
+}
+.navbar .logo a span{
+  color:crimson;
+}
+.navbar .menu li {
+  list-style: none;
+  display: inline-block;
+}
+.navbar .menu li a{
+  color:#fff;
+  font-size: 15px;
+  font-weight: 500;
+  margin-left: 25px;
+  transition:color 0.3s ease;
+}
+.navbar .menu li a:hover{
+  color:crimson;
+}
+/*My Home section styling*/
+.profile{
+  display:flex;
+  background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url(background1.jpg);
+  background-size: cover;
+  height: 100vh;
+  color:#fff;
+  min.height: 500px;
+  font-family: 'Ubuntu', Sans-Serif;
+}
+.ucab{
+    height: 100%;
+    position: absolute;
+    left: 20%;
+    bottom: 0;
+    transform: translateX(-50%);
+    transition: bottom 1s, left 1s;
+}
+
+.images{
+    width: 45%;
+    height: 80%;
+    position: absolute;
+    bottom: 0;
+    right: 120px;
+    top: 120px;
+    
+}
+.salvaña{
+    width: 90%;
+    height: 104%;
+    position: absolute;
+    right: 180px;
+    bottom: 20px;
+}
+.btn{
+  padding: 10px 35px;
+  background-color:transparent;
+  border:1px solid white;
+  color: white;
+  outline:none;
+  transition:.6s ease;
+}
+.btn:hover{
+  cursor:pointer;
+  background-color: white;
+  color: black;
+  box-shadow:0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight:bold;
+}
+.profile .max-width{
+  margin: auto 0 auto 40px;
+}
+.profile .profile-content .text-1{
+  font-size: 27px;
+}
+.profile .profile-content .text-2{
+  font-size: 75px;
+  font-weight:600;
+  margin-left:-3px;
+}
+.profile .profile-content .text-3{
+  font-size: 40px;
+  margin:5px 0;
+}
+.profile .profile-content .text-3 span{
+  color:crimson;
+  font-weight:500;
+}
+
+/*Contact*/
+.headings{
+  font-family: century;
+  font-size: 3rem;
+  text-align:center;
+  margin:40px 0px;
+}
+#contact{
+  display: flex;
+  flex-direction: column;
+  box-sizing:border-box;
+  background-color:rgba (0 0 0 0.9) ;
+  color:white;
+  padding:20px;
+}
+.form{
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  align-items: center;
+  margin:20px 0px;
+}
+.input{
+  padding:12px;
+  margin:15px;
+  width:30%;
+  border:none;
+  outline:none;
+}
+#msg{
+  width:94%;
+  padding:10px;
+  margin:15px;
+  border:none;
+  outline:none;
+}
+#send{
+  border-style: groove;
+  border-width: 10px;
+  border-color: pink;
+  border-radius: 20px;
+  padding:10px;
+  width:15%;
+  margin-left:305px;
+  margin-bottom:15px;
+  border:none;
+  outline:none;
+}
+#send:hover{
+  cursor:pointer;
+  background-color: white;
+  color: black;
+  box-shadow:0 0 5px white, 0 0 10px white, 0 0 15px white;
+  font-weight:bold;
+  }
+/*ABOUT US*/
+
+
+#about{
+  display: flex;
+  flex-direction: column;
+  box-sizing:border-box;
+  background-color:rgba (0 0 0 0.9) ;
+  
+  padding:20px;
+}
+
+
+/*SERVICES SECTION*/
+
+
+.services{
+  background: black;
+  text-align: center;
+}
+.services h1{
+  display: inline-block;
+  text-transform: uppercase;
+  border-bottom: 4px solid #3498db;
+  font-size: 20px;
+  padding-bottom: 10px;
+  margin-top: 40px;
+}
+.cen{
+  max-width: 1200px;
+  margin: auto;
+  overflow: hidden;
+  padding: 20px;
+}
+.service{
+  display: inline-block;
+  width: calc(100% / 3);
+  margin: 0 -2px;
+  padding: 20px;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: 0.4s;
+}
+.service:hover{
+  background: crimson;
+}
+.service i{
+  color: #3498db;
+  font-size: 34px;
+  margin-bottom: 30px;
+}
+.service h2{
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  margin: 0;
+}
+.service p{
+  color: gray;
+  font-size: 15px;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .service{
+    width: 50%;
+  }
+}
+@media screen and (max-width: 500px) {
+  .service{
+    width: 100%;
+  }
+}
+
+
+/* Our skill*/
+
+.block{
+    margin-top: 90px;
+    float: left;
+    width: 33.3%;
+    padding: 10px;
+    box-sizing: border-box;
+}
+.block h2{
+    text-align: center;
+    font-style: italic;
+}
+.skill{
+    box-sizing:border-box ;
+    float: right;
+    width: 100%;
+    margin: 60px auto;
+    color: #fff;
+    padding: 20px;
+}
+.skill ul{
+    list-style: none;
+}
+.skill li{
+    margin: 20px 0;
+    padding: 5px;
+    text-transform: capitalize;
+}
+.skill h1{
+    margin: 5px;
+    text-align: center;
+}
+.skill h3{
+    margin: 5px;
+}
+.bar{
+    background: #353b48;
+    display: block;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-radius:10px ;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25.1);
+}
+.bar:hover{
+    box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+.bar span{
+    height: 20px;
+    float: left;
+    background: linear-gradient(135deg, rgba(236,0,140,1)0%, rgba(252, 103, 103, 1)100%);
+}
+.html{
+    width: 90%;
+    animation: html 3s;
+}
+.css{
+    width: 70%;
+    animation: css 3s;
+}
+.javascript{
+    width: 50%;
+    animation: javascript 3s;
+}
+.photoshop{
+    width: 95%;
+    animation: photoshop 3s;
+}
+.figma{
+    width: 67%;
+    animation: figma 3s;
+}
+.illustrator{
+    width: 20%;
+    animation: illustrator 3s;
+}
+.php{
+    width: 30%;
+    animation: php 3s;
+}
+.mysql{
+    width: 70%;
+    animation: mysql 3s;
+}
+.firebase{
+    width: 10%;
+    animation: firebase 3s;
+}
